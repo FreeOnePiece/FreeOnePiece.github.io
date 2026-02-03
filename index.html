@@ -1,0 +1,26 @@
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #fullscreen-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+
+<iframe src="https://cubari.moe/read/gist/cmF3L2NlbHNpdXNuYXJod2FsL3B1bmstcmVjb3Jkcy9tYWluL2N1YmFyaS5qc29u/" id="cubari-frame"></iframe>
+<script>
+  document.getElementById("cubari-frame").addEventListener('load', function() {
+      try {
+          const iframeTitle = iframe.contentDocument.title;
+          document.title = iframeTitle;
+      }
+  });
+</script>

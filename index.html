@@ -2,12 +2,8 @@
 <html>
     <script src="https://cdn.jsdelivr.net/npm/js-base64@3.7.8/base64.min.js"></script>
     <body>
-        <iframe src="" id="cubari-frame" class="cubari-frame"></iframe>
+        <iframe src="https://cubari.moe/read/gist/cmF3L0ZyZWVPbmVQaWVjZS9GcmVlT25lUGllY2UuZ2l0aHViLmlvL3JlZnMvaGVhZHMvbWFpbi9jdWJhcmkuanNvbg/" id="cubari-frame" class="cubari-frame"></iframe>
         <script>
-          document.getElementById("myIframe").src = cburl;
-          var cubari = "https://raw.githubusercontent.com/FreeOnePiece/FreeOnePiece.github.io/refs/heads/main/cubari.json";
-          const cb = Base64.encode(cubari);  
-          const cburl = "https://cubari.moe/read/gist/" + cb + "/";
           document.getElementById("cubari-frame").addEventListener('load', function() {
               try {
                   const iframeTitle = iframe.contentDocument.title;
